@@ -1,0 +1,27 @@
+<form *ngIf="showAddTask"  class="add-form" (ngSubmit)="onSubmit()">
+  <!--the (ngSubmit) already does the event.preventDefault so we don't need to worry about that -->
+  <!-- *ngIf="showAddTask" it's angular's built in "if(showAddTask)" -->
+  <!--this means it will only show the form IF the showAddTask value is  = True -->
+
+  <div class="form-control">
+    <label for="text">Task</label>
+    <input type="text" name="text" [(ngModel)]="text" id="text" placeholder="Please Add Task">
+    <!-- we are binding the ngModel to the text:string; we created in the .ts comp .
+    also i think it needs to be the same word as in the attribute name="text" -->
+    <!-- [] is for input | () is for output | so if you want a two way data binding is like this [()]  -->
+    <!--in this case we are inputting the text and at the same time we are saving it's values as output for the DB  -->
+  </div>
+  <div class="form-control">
+    <label for="day">day & Time</label>
+    <input type="text" name="day" [(ngModel)]="day" id="day" placeholder="Add Day & Time">
+  </div>
+  <div class="form-control form-control-check">
+    <label for="reminder">Set Reminder</label>
+    <input type="checkbox" name="reminder" [(ngModel)]="reminder" id="reminder" >
+  </div>
+   <!-- if i used here {{text}} it will start as null but when i write text in the input text
+    it starts to fill the text here that's because it's a two way binding [(ngModel)]
+    it basically works like in React the useState for example: onChange ={(e)=> setText(e.target.value)}
+    -->
+  <input type="submit" value="Save Task" class="btn btn-block">
+</form>
