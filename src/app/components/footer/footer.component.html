@@ -2,3 +2,12 @@
   <p>Copyright &copy; 2022 by Gonçalo Vasques</p>
   <a routerLink="/about"> About</a>
 </footer>
+
+<!-- IMPORTANT NOTE TO FOOTER:
+In this case i have the footer inside the "app.comp.html/app.js"
+ and im using a conditional inside "footer.comp.ts" using a function with ngIf to show only if condition is true
+ BUT i could also make use of the <router-outlet> in the app.js , which means i could place <app-footer> to the
+ "tasks.component.html" which would make it only show when that component loads,
+  if I did that it means I would also need to place the <app-footer> tag in every single component that
+  i wanted it to show.
+ -->
