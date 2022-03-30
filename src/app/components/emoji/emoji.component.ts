@@ -14,6 +14,7 @@ export class EmojiComponent implements OnInit {
   emojis: Emoji[] = [];
   random: string = '';
   emojiLog: Array<string> = [];
+  previousEmoji: any = [];
 
 
 
@@ -31,6 +32,10 @@ export class EmojiComponent implements OnInit {
         /*console.log('log do random', this.random);*/
       this.emojiLog.push(this.random)
       /*  console.log('array de emojis', this.emojiLog)*/
+  for( let i =0 ; i < this.emojiLog.length ; i++){
+    this.previousEmoji = this.emojiLog[i-1]
+  }
+
       }})
 
   }
