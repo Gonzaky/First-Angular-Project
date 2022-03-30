@@ -1,5 +1,5 @@
-<footer *ngIf="showFooter('/')">
-  <p>Copyright &copy; 2022 by Gonçalo Vasques</p>
+<footer *ngIf="showFooter('/about')">
+  <p>Copyright &copy; 2022 by Gonçalo Vasques {{showFooter('/')? helpers : null}}</p>
   <a routerLink="/about"> About</a>
 </footer>
 

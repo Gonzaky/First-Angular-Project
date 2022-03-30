@@ -1,0 +1,8 @@
+<div class="emoji-container">
+  <a routerLink="/">Home Page</a>
+  <h2>Emoji-Generator</h2>
+  <h1>{{this.random.length ? this.random : "👇"}}</h1>
+  <app-button color="green" text="Random" (btnClick)="generateEmoji()"></app-button>
+</div>
+
+

@@ -7,3 +7,7 @@ export interface Task {
   day: string;
   reminder: boolean;
 }
+export interface Emoji {
+  id:number;
+ text: string[];
+}

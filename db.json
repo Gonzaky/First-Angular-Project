@@ -19,11 +19,32 @@
       "reminder": false
     }
   ],
-  "products": [
+  "emoji": [
     {
-      "id": "test1",
-      "text": "these collections work as directories on the website example: localhost:5000/products",
-      "text2": " the first collection here is  localhost:5000/Tasks"
+      "id": 1,
+      "text": [
+        "😊",
+        "😂",
+        "🤣",
+        "😃",
+        "😎",
+        "🤗",
+        "🥰",
+        "🙄",
+        "😏",
+        "😣",
+        "😥",
+        "😮",
+        "😛",
+        "😌",
+        "😴",
+        "🥱",
+        "😫",
+        "😪",
+        "😯",
+        "🤐",
+        "😜"
+      ]
     }
   ]
 }

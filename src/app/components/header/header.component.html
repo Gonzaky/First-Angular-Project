@@ -1,6 +1,7 @@
 
 <header>
 <h1>{{title}}</h1>
+  <a routerLink="/emoji" *ngIf="hasRoute('/')">Emojis</a>
   <app-button
     color="{{showAddTask ? 'red' : 'green'}}"
     text="{{showAddTask ? 'Close' : 'Add'}}"
@@ -8,4 +9,5 @@
     *ngIf="hasRoute('/')">
 
   </app-button>
+
 </header>
