@@ -12,7 +12,9 @@ export class EmojiComponent implements OnInit {
   /*@Input() emoji!: Emoji[]*/
 
   emojis: Emoji[] = [];
-  random: any = [];
+  random: string = '';
+  emojiLog: Array<string> = [];
+
 
 
   constructor(private emojiGeneratorService: EmojiGeneratorService) {
@@ -27,7 +29,8 @@ export class EmojiComponent implements OnInit {
        /* console.log('agora sim', data);*/
         this.random = data[0].text[Math.floor((Math.random()*data[0].text.length))];
         /*console.log('log do random', this.random);*/
-
+      this.emojiLog.push(this.random)
+      /*  console.log('array de emojis', this.emojiLog)*/
       }})
 
   }

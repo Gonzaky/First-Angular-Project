@@ -3,6 +3,9 @@
   <h2>Emoji-Generator</h2>
   <h1>{{this.random.length ? this.random : "👇"}}</h1>
   <app-button color="green" text="Random" (btnClick)="generateEmoji()"></app-button>
+  <br>
+  <p>Emoji Log:</p>
+  <span *ngFor="let item of emojiLog">{{item}}</span>
 </div>
 
 
