@@ -62,8 +62,8 @@ export class EmojiComponent implements OnInit {
   * } )
   * ------- // -----
   *
-  * CLEANER WAY I THINK:
-  *  this.emojiGeneratorService.getEmoji().subscribe( (data) => { return stuff},
+  *  the "sugar" way i think:                          next:                     error:      complete:
+  *  this.emojiGeneratorService.getEmoji().subscribe( (data) => { return stuff},(error)=>{},(complete)=>{} )
   *
   *  */
 
