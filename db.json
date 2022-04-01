@@ -17,6 +17,12 @@
       "text": "Food Shopping",
       "day": "May 7th at 12:30pm",
       "reminder": false
+    },
+    {
+      "text": "agora sim",
+      "day": "mar 30th at 17:18",
+      "reminder": true,
+      "id": 4
     }
   ],
   "emoji": [

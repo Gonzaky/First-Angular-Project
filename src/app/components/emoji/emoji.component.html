@@ -4,9 +4,11 @@
   <h1>{{this.random.length ? this.random : "👇"}}</h1>
   <app-button color="green" text="Random" (btnClick)="generateEmoji()"></app-button>
   <br>
-  <p *ngIf="this.previousEmoji.length ? this.previousEmoji : null ">Previous emoji: {{ this.previousEmoji}}</p>
+  <p *ngIf="this.previousEmoji ? this.previousEmoji : null ">Previous emoji: {{ this.previousEmoji}}</p>
   <p>Emoji Log:</p>
   <span *ngFor="let item of emojiLog">{{item}}</span>
+  <br>
+  <app-button color="blue" text="console.log Tests" (btnClick)="getTest()"></app-button>
 
 </div>
 
